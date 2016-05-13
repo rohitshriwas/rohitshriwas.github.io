@@ -2,21 +2,27 @@
 #
 # Use of `relative_permalinks` ensures post links from the index work properly.
 permalink:           pretty
-relative_permalinks: true
+# relative_permalinks: true # Doesn't work anymore due to https://jekyllrb.com/docs/upgrading/2-to-3/#relative-permalink-support-removed
 
 # Setup
-title:               Lanyon
-tagline:             'A Jekyll theme'
-description:         'A reserved <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
+title:               Teststation
+tagline:             'Order from Chaos'
+description: > # this means to ignore newlines until "baseurl:"
+  Hello, welcome to my blog :-) I don't say much but I occasionally write
+  about things I've learned from a variety of sources, just to be able to
+  refer to them myself later. Feel free to look around and get in touch.
 url:                 http://lanyon.getpoole.com
 baseurl:             ''
-paginate:            5
+paginate:            3
 
 # About/contact
 author:
-  name:              Mark Otto
-  url:               https://twitter.com/mdo
-  email:             markdotto@gmail.com
+  name:              Rohit Shriwas
+  url:               https://rohit.teststation.org/
+  email:             rohit@teststation.org
 
 # Custom vars
 version:             1.0.0
+
+# Paginator gem
+gems: [jekyll-paginate]
