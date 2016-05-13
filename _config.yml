@@ -10,10 +10,11 @@ tagline:             'Order from Chaos'
 description: > # this means to ignore newlines until "baseurl:"
   Hello, welcome to my blog :-) I don't say much but I occasionally write
   about things I've learned from a variety of sources, just to be able to
-  refer to them myself later. Feel free to look around and get in touch.
+  refer to them myself later. Deriving Order from Chaos so to speak. Feel 
+  free to look around and get in touch.
 url:                 https://blog.teststation.org/
 baseurl:             ''
-paginate:            3
+paginate:            7
 
 # About/contact
 author:
