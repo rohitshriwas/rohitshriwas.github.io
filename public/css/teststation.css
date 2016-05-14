@@ -1,0 +1,18 @@
+.sidebar-item {
+  text-align: justify;
+}
+
+.icon > svg {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle; 
+}
+
+.icon > svg path {
+  fill: #828282; 
+}
+
+.awotd:hover {
+  text-decoration: none;
+}

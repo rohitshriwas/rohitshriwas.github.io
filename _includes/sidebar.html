@@ -26,6 +26,7 @@
     {% endfor %}
 
     <a class="sidebar-nav-item" href="{{ site.author.url }}">About</a>
+    <span class="sidebar-nav-item">Find me on {% include icon-github.html username=site.author.github_username %} {% include icon-twitter.html username=site.author.twitter_username %} {% include icon-gplus.html username=site.author.gplus_username %}</span>
     <span class="sidebar-nav-item">Built with <a href="https://jekyllrb.com/">Jekyll</a> &amp; <a href="http://lanyon.getpoole.com/">Lanyon</a></span>
     <span class="sidebar-nav-item">Hosted on <a href="https://pages.github.com/">GitHub Pages</a></span>
     <!--
