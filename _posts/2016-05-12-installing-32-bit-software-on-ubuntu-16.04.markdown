@@ -8,13 +8,13 @@ Ubuntu used to have a hackish way to get a 32-bit runtime on a 64-bit system wit
 
 * Enable the i386 architecture with:
 {% highlight bash %}
-  dpkg --add-architecture i386
-  apt-get update
+dpkg --add-architecture i386
+apt-get update
 {% endhighlight %}
 
 * Install 32-bit libraries with:
 {% highlight bash %}
-  apt-get install libc6:i386 libstdc++6:i386
+apt-get install libc6:i386 libstdc++6:i386
 {% endhighlight %}
 
 It's worth noting how it's similar to how it's done in Fedora, i.e. `dnf install glib6.i686` and so on.

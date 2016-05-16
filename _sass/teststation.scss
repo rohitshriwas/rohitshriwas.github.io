@@ -18,3 +18,12 @@
 .awotd:hover {
   text-decoration: none;
 }
+
+pre {
+  white-space: pre;
+  overflow-x: auto;
+}
+
+.post > p {
+  text-align: justify;
+}

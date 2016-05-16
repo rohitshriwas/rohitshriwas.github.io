@@ -8,26 +8,26 @@ It's 2016 and CentOS 7 is still defaulting to Python 2.7! Thankfully Python 3 ha
 
 * Enable the EPEL repository with:
 {% highlight bash %}
-  yum install epel-release
+yum install epel-release
 {% endhighlight %}
 
 * Install python34 and python-pip packages with:
 {% highlight bash %}
-  yum install python34 python-pip
+yum install python34 python-pip
 {% endhighlight %}
 
 * Update pip and install virtualenv with:
 {% highlight bash %}
-  pip install -U pip
-  pip install virtualenv
+pip install -U pip
+pip install virtualenv
 {% endhighlight %}
 
 * Create and activate a new python3 virtualenv with:
 {% highlight bash %}
-  virtualenv -p python3 <env_name>
+virtualenv -p python3 <env_name>
 {% endhighlight %}
 
 * Activate the environment and code away :D
 {% highlight bash %}
-  cd <env_name> && source bin/activate
+cd <env_name> && source bin/activate
 {% endhighlight %}
