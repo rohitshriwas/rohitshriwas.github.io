@@ -6,7 +6,7 @@ categories: linux automation cyberoam
 ---
 The network at [BITS Pilani Goa Campus][campus] is secured with [Cyberoam][cyberoam] UTM system and it's mandatory for all users to login to a gateway server before they're allowed internet access. While this ensures fair use and quota limits for everyone, it's often a huge hassle to keep logging in whenever you reconnect. They do provide a [client][crclient] to simplify it, but I still found the manual process somewhat annoying and wasteful. So here's what I did to automate the thing (all commands as root, on Fedora 23):
 
-* Create a new service user to run the crclient binary:
+* Create a new service user to run the client:
 {% highlight bash %}
 useradd -c "BITS / Goa Campus - Cyberoam User" -l -m -r -Z guest_u cruser
 {% endhighlight %}
@@ -60,7 +60,7 @@ if [[ "$2" = "up" ]]; then
         fi
 fi
 
-if [[ "$2" == "down" ]]; then
+if [[ "$2" = "down" ]]; then
         killall -u cruser;
 fi
 EOF
@@ -68,7 +68,7 @@ EOF
 
 * Make the script executable:
 {% highlight bash %}
-chmod 750 /etc/NetworkManager/dispatcher.d/99-crclient
+chmod 755 /etc/NetworkManager/dispatcher.d/99-crclient
 {% endhighlight %}
 
 And that's it! Now, I find myself already logged in whenever I reconnect to the campus Wi-FI. This can probably be refined and adapted to work with other Cyberoam enabled networks as well.
