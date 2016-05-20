@@ -3,6 +3,7 @@ layout: post
 title:  "Automate Cyberoam Gateway Login w/ NetworkManager dispatcher service"
 date:   2016-05-16 17:16:46 +0530
 categories: linux automation cyberoam
+blurb: The network at BITS Pilani Goa Campus is secured with Cyberoam UTM system and it's mandatory for all users to login to a gateway server bef...
 ---
 The network at [BITS Pilani Goa Campus][campus] is secured with [Cyberoam][cyberoam] UTM system and it's mandatory for all users to login to a gateway server before they're allowed internet access. While this ensures fair use and quota limits for everyone, it's often a huge hassle to keep logging in whenever you reconnect. They do provide a [client][crclient] to simplify it, but I still found the manual process somewhat annoying and wasteful. So here's what I did to automate the thing (all commands as root, on Fedora 23):
 

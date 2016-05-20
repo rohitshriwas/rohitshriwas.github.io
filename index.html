@@ -14,9 +14,14 @@ title: Home
 
     <span class="post-date">{{ post.date | date_to_string }}</span>
 
-    {{ post.content | truncate: 150 }}
+    {% if post.blurb %}
+      {{ post.blurb }}
+    {% else %}
+      {{ post.content | truncate: 150 }}
+    {% endif %}
+
     {% if post.content.size > 150 %}
-    <a href="{{ site.baseurl }}{{ post.url }}">Read more.</a>
+      <a href="{{ site.baseurl }}{{ post.url }}">Read more.</a>
     {% endif %}
   </div>
   {% endfor %}

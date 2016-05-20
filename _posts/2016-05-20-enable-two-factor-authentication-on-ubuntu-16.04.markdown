@@ -3,6 +3,7 @@ layout: post
 title:  "Enable Two-Factor Authenticaton on Ubuntu 16.04 Xenial Xerus"
 date:   2016-05-20 20:44:08 +0530
 categories: ubuntu
+blurb: Two-factor authentication provides unambiguous identification of users by means of the combination of two different compo...
 ---
 
 <blockquote>
