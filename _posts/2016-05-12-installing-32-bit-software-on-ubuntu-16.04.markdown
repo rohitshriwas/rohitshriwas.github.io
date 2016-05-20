@@ -6,13 +6,13 @@ categories: ubuntu
 ---
 Ubuntu used to have a hackish way to get a 32-bit runtime on a 64-bit system with the _ia32-libs_ package. However, that has been deprecated in favour of [MultiArch][multiarch] and now we have the following steps to get things like [adb][adb] and [crclient][crclient] working again:
 
-* Enable the i386 architecture with:
+* Enable the i386 architecture (as root user):
 {% highlight bash %}
 dpkg --add-architecture i386
 apt-get update
 {% endhighlight %}
 
-* Install 32-bit libraries with:
+* Install 32-bit libraries (as root user):
 {% highlight bash %}
 apt-get install libc6:i386 libstdc++6:i386
 {% endhighlight %}
