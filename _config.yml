@@ -31,4 +31,4 @@ author:
 version:             1.0.0
 
 # Paginator gem
-gems: [jekyll-paginate]
+gems: [jekyll-paginate, jekyll-sitemap]
