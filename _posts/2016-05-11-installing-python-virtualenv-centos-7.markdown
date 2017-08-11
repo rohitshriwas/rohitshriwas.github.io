@@ -19,7 +19,7 @@ yum install python34 python-pip
 * Update pip and install virtualenv with:
 {% highlight bash %}
 pip install -U pip
-pip install virtualenv
+pip install -U virtualenv
 {% endhighlight %}
 
 * Create and activate a new python3 virtualenv with:
